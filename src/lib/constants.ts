@@ -1,6 +1,7 @@
 import { getFormspreeConfig } from '@/lib/formspree';
+import { getSiteUrl } from '@/lib/site';
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+export const SITE_URL = getSiteUrl();
 
 export const RESUME_URL = '/Mohit_Sisodiya_Resume.pdf';
 
