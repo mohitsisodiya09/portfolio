@@ -33,6 +33,9 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# local working notes (not for publish)
+lib/data/Projects & their content.md
+
 # vercel
 .vercel
 
