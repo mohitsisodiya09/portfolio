@@ -32,7 +32,7 @@ For faster reloads (Turbopack), use `npm run dev:turbo` instead.
 
 ## Environment Variables
 
-Copy `.env.example` to `.env.local` and set your production URL before deploying:
+Copy `.env.example` to `.env.local` for local development. Leave production values empty in the example — set them in your host after deploy:
 
 ```bash
 cp .env.example .env.local
@@ -42,6 +42,8 @@ cp .env.example .env.local
 | ------------------------------- | -------------------------------------------------------- |
 | `NEXT_PUBLIC_SITE_URL`          | Canonical site URL for Open Graph and metadata           |
 | `NEXT_PUBLIC_FORMSPREE_FORM_ID` | Formspree form ID only (e.g. `xlgklynq`), not a full URL |
+
+Requires **Node.js 24+**.
 
 ## Tech Stack
 
@@ -54,11 +56,22 @@ cp .env.example .env.local
 
 ## Project Structure
 
-```
-app/           # App Router (layout, page, icons, OG, errors)
-components/    # Sections, motion, and UI
-hooks/         # Client hooks (active section)
-lib/           # Constants, scroll helpers, project/experience data
+```text
+public/
+  logo.svg                    # Brand mark
+  Mohit_Sisodiya_Resume.pdf   # Downloadable resume
+  robots.txt                  # Crawler rules
+src/
+  app/                  # Next.js App Router (routes, layout, metadata, icons)
+  components/
+    layout/             # Shell: navbar, footer, hash nav, back-to-top
+    sections/           # Page sections (hero → contact)
+    motion/             # Animation primitives
+    ui/                 # Shared UI (logo, icons, section chrome)
+  hooks/                # Client hooks
+  lib/
+    data/               # Experience & projects content
+    *.ts                # Constants, scroll, Formspree, icon maps
 ```
 
 ## Deploy
