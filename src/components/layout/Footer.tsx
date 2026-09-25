@@ -1,4 +1,4 @@
-import { CurrentYear } from '@/components/CurrentYear';
+import { CurrentYear } from '@/components/layout/CurrentYear';
 import { Logo } from '@/components/ui/Logo';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import { EMAIL, FOOTER_LINKS } from '@/lib/constants';

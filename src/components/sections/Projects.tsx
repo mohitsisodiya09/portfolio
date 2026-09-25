@@ -1,31 +1,18 @@
 'use client';
 
-import { useState } from 'react';
 import { GlowCard } from '@/components/motion/GlowCard';
 import { Reveal } from '@/components/motion/Reveal';
 import { GitHubIcon } from '@/components/ui/BrandIcons';
 import { SectionHeader } from '@/components/ui/SectionHeader';
-import {
-  PROJECT_COMPANIES,
-  projects,
-  type Project,
-  type ProjectCompany,
-} from '@/lib/data/projects';
+import { PROJECT_COMPANIES, projects, type Project, type ProjectCompany } from '@/lib/data/projects';
 import { ExternalLink } from 'lucide-react';
+import { useState } from 'react';
 
 type CompanyFilter = 'All' | ProjectCompany;
 
 const FILTERS: CompanyFilter[] = ['All', ...PROJECT_COMPANIES];
 
-function FeaturedProject({
-  project,
-  index,
-  showCompany,
-}: {
-  project: Project;
-  index: number;
-  showCompany: boolean;
-}) {
+function FeaturedProject({ project, index, showCompany }: { project: Project; index: number; showCompany: boolean }) {
   return (
     <Reveal delay={index * 0.1} scale className="h-full">
       <GlowCard className="rounded-2xl h-full">
@@ -100,15 +87,7 @@ function FeaturedProject({
   );
 }
 
-function StandardProject({
-  project,
-  index,
-  showCompany,
-}: {
-  project: Project;
-  index: number;
-  showCompany: boolean;
-}) {
+function StandardProject({ project, index, showCompany }: { project: Project; index: number; showCompany: boolean }) {
   return (
     <Reveal delay={Math.min(index, 8) * 0.08} scale className="h-full">
       <GlowCard className="rounded-2xl h-full">
@@ -172,9 +151,7 @@ export default function Projects() {
   const showFeatured = filter === 'All';
   const showCompany = filter === 'All';
   const featured = showFeatured ? filtered.filter((project) => project.highlight) : [];
-  const standard = showFeatured
-    ? filtered.filter((project) => !project.highlight)
-    : filtered;
+  const standard = showFeatured ? filtered.filter((project) => !project.highlight) : filtered;
 
   return (
     <section id="projects" className="section-anchor py-16 sm:py-20 lg:py-28 px-4 sm:px-6 section-alt">
@@ -209,12 +186,7 @@ export default function Projects() {
           {featured.length > 0 && (
             <div className="grid lg:grid-cols-2 gap-4 sm:gap-5 items-stretch">
               {featured.map((project, i) => (
-                <FeaturedProject
-                  key={project.id}
-                  project={project}
-                  index={i}
-                  showCompany={showCompany}
-                />
+                <FeaturedProject key={project.id} project={project} index={i} showCompany={showCompany} />
               ))}
             </div>
           )}

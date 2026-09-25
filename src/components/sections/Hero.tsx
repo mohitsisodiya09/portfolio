@@ -46,7 +46,10 @@ export default function Hero() {
           </span>
         </FadeIn>
 
-        <FadeIn delay={0.42} className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center justify-center mb-8 sm:mb-10 w-full max-w-sm sm:max-w-none">
+        <FadeIn
+          delay={0.42}
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center justify-center mb-8 sm:mb-10 w-full max-w-sm sm:max-w-none"
+        >
           <SectionLink
             href="#projects"
             className="btn-primary px-8 py-3.5 rounded-xl text-sm font-semibold w-full sm:w-auto text-center min-h-11 inline-flex items-center justify-center"

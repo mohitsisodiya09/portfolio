@@ -1,5 +1,5 @@
-import { ContactForm } from '@/components/ContactForm';
 import { Reveal } from '@/components/motion/Reveal';
+import { ContactForm } from '@/components/sections/ContactForm';
 import { GitHubIcon, LinkedInIcon, WhatsAppIcon } from '@/components/ui/BrandIcons';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { EMAIL, GITHUB_URL, LINKEDIN_URL, RESUME_URL, WHATSAPP_URL } from '@/lib/constants';
@@ -54,9 +54,7 @@ export default function Contact() {
                   <a
                     key={item.label}
                     href={item.href}
-                    {...('external' in item && item.external
-                      ? { target: '_blank', rel: 'noopener noreferrer' }
-                      : {})}
+                    {...('external' in item && item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     className="card card-interactive flex items-start gap-3 rounded-xl p-4 border min-h-14"
                   >
                     {content}

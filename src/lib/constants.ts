@@ -2,7 +2,7 @@ import { getFormspreeConfig } from '@/lib/formspree';
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
-export const RESUME_URL = 'https://drive.google.com/file/d/1ngFP4d4zAfD8wn5e7v3vW2q4smCfNt_Z/view?usp=sharing';
+export const RESUME_URL = '/Mohit_Sisodiya_Resume.pdf';
 
 export const EMAIL = 'mohitsisodiya76@gmail.com';
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/mohitsisodiya09';

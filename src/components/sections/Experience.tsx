@@ -7,7 +7,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion
 import { ExternalLink } from 'lucide-react';
 import { useRef } from 'react';
 
-export function ExperienceTimeline() {
+export default function Experience() {
   const containerRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
 
@@ -44,7 +44,10 @@ export function ExperienceTimeline() {
           )}
 
           {prefersReducedMotion && (
-            <div className="absolute left-4 top-2 bottom-2 w-px hidden sm:block bg-portfolio-accent/40" aria-hidden="true" />
+            <div
+              className="absolute left-4 top-2 bottom-2 w-px hidden sm:block bg-portfolio-accent/40"
+              aria-hidden="true"
+            />
           )}
 
           <div className="space-y-6 sm:space-y-10">
