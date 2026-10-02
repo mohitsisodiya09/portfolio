@@ -3,7 +3,7 @@ import { Logo } from '@/components/ui/Logo';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import { EMAIL, FOOTER_LINKS } from '@/lib/constants';
 
-const FOOTER_HIGHLIGHTS = ['6.5+ yrs', 'Node.js', 'Led teams of 10+'];
+const FOOTER_HIGHLIGHTS = ['6+ yrs', 'Node.js', 'Led teams of 8'];
 
 export default function Footer() {
   return (

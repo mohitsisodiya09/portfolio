@@ -160,7 +160,7 @@ export default function Projects() {
           <SectionHeader
             label="Projects"
             title="Key Projects"
-            subtitle="A selection of production platforms I've architected and shipped — from fintech and logistics to franchise marketplaces."
+            subtitle="13 production projects across fintech, logistics, SaaS, and marketplaces — including platforms for Shell and DP World."
           />
         </Reveal>
 

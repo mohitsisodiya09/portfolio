@@ -25,7 +25,7 @@ export default function Experience() {
           <SectionHeader
             label="Experience"
             title="Professional Journey"
-            subtitle="6.5+ years building scalable backends, leading teams, and shipping production platforms."
+            subtitle="6+ years building scalable backends, leading teams of up to 8, and shipping 13 production projects."
           />
         </Reveal>
 

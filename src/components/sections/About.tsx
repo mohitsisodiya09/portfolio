@@ -3,10 +3,10 @@ import { Reveal } from '@/components/motion/Reveal';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 
 const stats = [
-  { value: '6.5+', label: 'Years Experience' },
-  { value: '10+', label: 'Engineers Led' },
+  { value: '6+', label: 'Years Experience' },
+  { value: '8', label: 'Engineers Led' },
   { value: '8+', label: 'Domains' },
-  { value: '15+', label: 'Projects Delivered' },
+  { value: '13', label: 'Projects Delivered' },
 ];
 
 export default function About() {
@@ -24,14 +24,15 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
           <Reveal offsetX={-24} offsetY={0} delay={0.1} className="space-y-5">
             <p className="text-sm sm:text-base leading-relaxed text-portfolio-muted">
-              I&apos;m a Senior Software Engineer and Technical Lead with 6.5+ years of experience architecting and
-              delivering scalable backend systems. I specialize in Node.js, Express.js, NestJS, and microservices design
-              across AWS, GCP, and Azure.
+              I&apos;m a Senior Software Engineer and Technical Lead with 6+ years of experience building and scaling
+              production systems across fintech, logistics, SaaS, and marketplace domains. I specialize in Node.js,
+              Express.js, and NestJS — backend architecture, microservices, API design, auth/RBAC, payments, and
+              real-time systems.
             </p>
             <p className="text-sm sm:text-base leading-relaxed text-portfolio-muted">
-              I&apos;ve led cross-functional teams of up to 10 engineers and shipped production platforms across
-              fintech, logistics, franchise, ITAD, maritime, digital culture, and GenAI — owning everything from
-              architecture decisions to client communication and sprint planning.
+              I&apos;ve delivered 13 projects — including solutions for Shell and DP World — and led cross-functional
+              teams of up to 8. I&apos;ve improved API latency by up to 60% and cut CI/CD times by approximately 60–70%,
+              with experience in LLM-powered document processing, mentoring, and engineering standardisation.
             </p>
             <p className="text-sm sm:text-base leading-relaxed text-portfolio-muted">
               I&apos;m passionate about building systems that are fast, reliable, and maintainable — and about growing

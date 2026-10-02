@@ -60,11 +60,11 @@ On Vercel, `NEXT_PUBLIC_SITE_URL` can be left empty at first — the app falls b
 
 ```text
 public/
-  logo.svg                    # Brand mark
+  llms.txt                    # LLM-oriented site summary
   Mohit_Sisodiya_Resume.pdf   # Downloadable resume
-  robots.txt                  # Crawler rules
+  logo.svg                    # Brand mark
 src/
-  app/                  # App Router (routes, layout, metadata, icons)
+  app/                  # App Router (routes, layout, metadata, icons, sitemap, robots)
   components/
     layout/             # Navbar, footer, hash nav, back-to-top
     sections/           # Page sections (hero → contact)

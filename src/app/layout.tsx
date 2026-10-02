@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: 'Mohit Sisodiya · Backend Engineer',
   description:
-    'Senior Software Engineer & Technical Lead with 6.5+ years building scalable Node.js backends across fintech, logistics, and GenAI platforms.',
+    'Senior Software Engineer & Technical Lead with 6+ years building scalable Node.js backends across fintech, logistics, SaaS, and marketplace domains.',
   keywords: [
     'Mohit Sisodiya',
     'Senior Software Engineer',
